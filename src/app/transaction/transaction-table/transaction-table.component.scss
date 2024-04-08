@@ -1,0 +1,40 @@
+.filters {
+    display: flex;
+    gap: 1rem;
+}
+
+.no-result-text {
+    text-align: center;
+    color: white;
+}
+
+table.mat-table {
+    width: 100%;
+}
+
+.mat-mdc-raised-button:not(:disabled){
+    margin-top: 12px;
+}
+
+@media(max-width: 767px){
+    .filters{
+        display: block;
+        padding-bottom: 24px;
+    }
+    
+    .mat-mdc-form-field{
+        min-width: 100%;
+    }
+
+    .mat-mdc-raised-button:not(:disabled){
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .mat-mdc-table{
+        width: 100%;
+        table-layout: fixed;
+        overflow-x: scroll;
+        display: block;
+    }
+}
